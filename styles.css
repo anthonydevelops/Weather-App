@@ -1,0 +1,26 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(45deg, yellow, cyan);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+.weather {
+  display: block;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
