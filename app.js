@@ -2,7 +2,7 @@ const city = document.querySelector("#city");
 const temperature = document.querySelector("#weather")
 const tempImage = document.querySelector("#icon");
 
-function getLocation() {
+window.onload = () => {
   if("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(getData);
   } else {
@@ -10,7 +10,7 @@ function getLocation() {
   }
 }
 
-const getData = function (position) {
+const getData = (position) => {
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;
   const url = "https://fcc-weather-api.glitch.me/api/current?lat=" + latitude + "&lon=" + longitude;
