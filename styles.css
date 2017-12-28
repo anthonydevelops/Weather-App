@@ -16,9 +16,13 @@ h1 {
 
 }
 
-.weather {
+.data {
   display: block;
   text-align: center;
+}
+
+button {
+  margin: 0 auto;
 }
 
 footer {
