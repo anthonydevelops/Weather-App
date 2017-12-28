@@ -2,8 +2,11 @@
 A weather app that takes the user's location and shows the current weather in Celsius or Fahrenheit.
 
 - [x] Initial file(s) commit
-- [ ] Structure HTML
-- [ ] Style CSS
-- [ ] Use **Dark-Sky** api to fetch local weather
+- [x] Structure HTML
+- [x] Style CSS
+- [x] Use **FCC Weather** api to fetch local weather
+- [ ] Clear any bugs/ugly styling
+- [ ] Copy over to Codepen
+- [ ] Optional: Deploy?
 - [ ] Optional: Tweet button?
 - [ ] Optional: 7-day forecast?
