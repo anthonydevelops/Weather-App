@@ -1,7 +1,8 @@
 const city = document.querySelector("#city");
 const temperature = document.querySelector("#weather")
-const tempImage = document.querySelector("#icon");
+const main = document.querySelector(".data");
 
+//On start, check if geolocation is available. If not, report it.
 window.onload = () => {
   if("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(getData);
@@ -10,6 +11,7 @@ window.onload = () => {
   }
 }
 
+//Capture lat & long, then access the api which will display local weather data
 const getData = (position) => {
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;
@@ -17,6 +19,7 @@ const getData = (position) => {
   accessApi(url);
 }
 
+//Fetch data from FreeCodeCamp api
 function accessApi(url) {
   fetch(url)
     .then((resp) => resp.json())
@@ -31,7 +34,10 @@ function accessApi(url) {
     });
 }
 
+//Display weather data & image
 function showData(cond, temp, image) {
+  const newImage = document.createElement("IMG");
+  newImage.setAttribute("src", image);
+  main.appendChild(newImage);
   temperature.innerHTML = cond + " " + temp;
-  tempImage.src = image;
 }
