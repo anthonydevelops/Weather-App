@@ -15,16 +15,18 @@
     <div class="data">
       <h3 id="city"></h3>
       <h3 id="weather"></h3>
+      <canvas id="animated-icon" width="128" height="128"></canvas>
     </div>
-    <button type="button" class="ion-thermometer">
+    <button id="cfBtn" type="button" class="ion-thermometer" onclick="changeTemp()">
       C - F
     </button>
 
     <!-- Display contributor -->
-    <footer>Coded by
+    <footer><span class="ion-android-favorite"></span> Coded by
       <a href="https://github.com/anthonydevelops"> Anthony Campos </a>
     </footer>
 
+    <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </body>
 
