@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: linear-gradient(45deg, yellow, cyan);
+  background: linear-gradient(45deg, #32506d, #e95950);
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'Nunito', sans-serif;
@@ -33,7 +33,7 @@ button {
   display: block;
   border: none;
   color: white;
-  background-color: #32506d;
+  background-color: #32506d; 
   font-size: 25px;
   border-radius: 12px;
   margin-top: 3%;
